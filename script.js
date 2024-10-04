@@ -2,10 +2,10 @@ let selectedLogo = null;
 
 function selectLogo(logoId) {
     if (selectedLogo) {
-        document.getElementById(`selector-${selectedLogo}`).classList.remove('selected');
+        document.getElementById(`logo-${selectedLogo}`).classList.remove('selected-logo');
     }
     selectedLogo = logoId;
-    document.getElementById(`selector-${logoId}`).classList.add('selected');
+    document.getElementById(`logo-${logoId}`).classList.add('selected-logo');
 }
 
 function donate() {
@@ -23,7 +23,7 @@ function donate() {
 particlesJS("particles-js", {
   "particles": {
     "number": {
-      "value": 50, // Moderate number of particles
+      "value": 50,
       "density": {
         "enable": true,
         "value_area": 800
@@ -62,7 +62,7 @@ particlesJS("particles-js", {
       "random": true,
       "anim": {
         "enable": false,
-        "speed": 20, // Reduced speed
+        "speed": 20,
         "size_min": 0.1,
         "sync": false
       }
@@ -76,7 +76,7 @@ particlesJS("particles-js", {
     },
     "move": {
       "enable": true,
-      "speed": 10, // Moderate speed
+      "speed": 10,
       "direction": "none",
       "random": false,
       "straight": false,
@@ -131,12 +131,10 @@ particlesJS("particles-js", {
   "retina_detect": true
 });
 
-//   ----------------------------Lock Right-Click---------------------------------
-
 document.addEventListener("contextmenu", function (e) {
-	e.preventDefault();
+    e.preventDefault();
 });
 
 document.addEventListener("selectstart", function (e) {
-	e.preventDefault();
+    e.preventDefault();
 });
