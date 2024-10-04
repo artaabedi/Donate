@@ -50,20 +50,20 @@ body {
 
 .logo-item {
     position: relative;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 5px; /* Adjusted padding */
+    border-radius: 5px; /* Adjusted border-radius */
     border: 2px solid transparent;
     transition: border 0.3s, box-shadow 0.3s;
 }
 
 .logo-item img {
-    width: 100px;
+    width: 80px; /* Adjusted width */
     cursor: pointer;
 }
 
 .selected-logo {
-    border: 3px solid black;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid black; /* Reduced border size */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Reduced shadow size */
 }
 
 .donate-btn {
