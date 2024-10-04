@@ -26,7 +26,7 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.3);
     position: relative;
     z-index: 1;
-    width: 50%; /* Adjusted size back to first state */
+    width: 50%;
 }
 
 .donate-me {
@@ -42,12 +42,16 @@ body {
 .logo-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1em; /* Restored gap */
+    gap: 1em;
     margin-bottom: 1em;
 }
 
 .logo-item {
     position: relative;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: border 0.3s, box-shadow 0.3s;
 }
 
 .logo-item img {
@@ -55,21 +59,9 @@ body {
     cursor: pointer;
 }
 
-.selector {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    border: 2px solid rgba(0, 0, 0, 0.5);
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: transparent;
-}
-
-.selector.selected {
-    background: black;
-    border-color: white;
+.selected-logo {
+    border: 3px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .donate-btn {
