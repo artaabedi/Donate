@@ -44,6 +44,8 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 1em;
     margin-bottom: 1em;
+    align-items: center;
+    justify-items: center;
 }
 
 .logo-item {
